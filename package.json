@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.1.0"
+    "@clerk/nextjs": "^6.33.7"
   }
 }

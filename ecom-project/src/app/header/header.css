@@ -1,0 +1,80 @@
+/* Gradient background */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #000000, #e32d2d);
+  color: white;
+}
+
+/* Logo */
+.logo-link img {
+  height: 55px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.logo-link img:hover {
+  transform: scale(2.05);
+}
+
+/* Search bar */
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-container button {
+  background: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-container button:hover {
+  background: #ffe4ec;
+}
+
+/* Icon section */
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-img:hover {
+  animation: shake 0.3s;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}

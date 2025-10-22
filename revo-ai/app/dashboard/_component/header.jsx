@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import {UserButton} from '@clerk/nextjs'
 import { Audiowide } from 'next/font/google'
+import Link from 'next/link'
 
 const playwrite = Audiowide({ 
     subsets: ['latin'],
@@ -28,11 +29,13 @@ function Header() {
 
     
       <div className='flex gap-4 items-center'>
-        <Button className="bg-purple-600 hover:bg-[#793FDF] transition duration-300 
-                         shadow-md hover:shadow-lg shadow-purple-500/50 
-                         font-semibold px-5 py-2">
-            Dashboard
-        </Button>
+        <Link href={'/dashboard'}>
+          <Button className="bg-purple-600 hover:bg-[#793FDF] transition duration-300 
+                          shadow-md hover:shadow-lg shadow-purple-500/50 
+                          font-semibold px-5 py-2">
+              Dashboard
+          </Button>
+        </Link>
 
         <UserButton 
             appearance={{ 

@@ -10,7 +10,7 @@ function DashboardLayout({children}) {
       </div>
       <div>
         <Header />
-          <div className='md:ml-64 lg:ml-64 sm:ml-32'>
+          <div className='md:ml-64 lg:ml-64 sm:ml-32 p-10'>
             {children}
           </div>
       </div>

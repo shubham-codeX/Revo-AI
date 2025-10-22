@@ -22,14 +22,16 @@ function SelectTopic({onUserSelect}) {
         value !='Custom Prompt'&& onUserSelect('topic', value)
         }}>
         <SelectTrigger 
-          className="w-full h-14 text-lg
-                     focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all shadow-sm shadow-violet-500"
+          className="w-full h-14 text-lg font-medium bg-background border-2 border-border 
+                     hover:border-primary/50 transition-all duration-200
+                     focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background 
+                     shadow-lg shadow-primary/10 data-[state=open]:border-primary"
         >
           <SelectValue placeholder="Content Type" />
         </SelectTrigger>
         <SelectContent>
           {options.map((item, index)=>(
-            <SelectItem key={index} value={item} className='hover:!bg-purple-300 focus:!bg-purple-200 focus:text-violet-600'>
+            <SelectItem key={index} value={item} className='text-foreground data-[state=checked]:!text-primary data-[highlighted]:!bg-purple-100 data-[highlighted]:!text-primary cursor-pointer'>
               {item}
             </SelectItem>
           ))}

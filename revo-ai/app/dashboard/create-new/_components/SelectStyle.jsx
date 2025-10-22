@@ -16,7 +16,7 @@ function SelectStyle({onUserSelect}) {
     
   return (
     <div className='mt-7'>
-      <h2 className='font-extrabold text-3xl text-primary tracking-tight mb-2'>Style</h2>
+      <h2 className='font-extrabold text-3xl text-purple-500 tracking-tight mb-2'>Style</h2>
       
       <p className='text-muted-foreground mb-6'>Creation Type</p>
       
